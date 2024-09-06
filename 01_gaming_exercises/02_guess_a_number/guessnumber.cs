@@ -10,9 +10,9 @@ class guessNumber {
     //int secretNumber = rnd.Next(25, 100) //generate from 25 to 999
     while (numGuess < maxGuess)
     {
-      Console.WriteLine("Please guess the number between 0 and 10")
+      Console.WriteLine("Please guess the number between 0 and 10");
       guess = Convert.ToInt32(Console.ReadLine());
-      Console.WriteLine(guess);
+      Console.WriteLine("Guess " + guess);
       numGuess++;
       if (guess < secretNumber)
       {
@@ -24,15 +24,21 @@ class guessNumber {
       }
       else 
       {
-        Console.WriteLine("Your guess is correct!")
+        Console.WriteLine("Your guess is correct!");
+        break; //keyword to immediately exit a loop
+      }
+      
+      if (numGuess >= maxGuess)
+      {
+        Console.WriteLine("You have lost the game.");
       }
     }
-    //while loop
-      //allow user to guess the number 
-      // compare the guess to the secre number
-      //if match print win, if > or <, give a hint
-      //+1 to numguess
-      //check if numguess > maxguesses
-      //if ture, print a "lose game" message, if false guess again
+    //while loop x
+      //allow user to guess the number  x
+      // compare the guess to the secre number x
+      //if match print win, if > or <, give a hint x
+      //+1 to numguess x
+      //check if numguess > maxguesses x
+      //if true, print a "lose game" message, if false guess again
   }
 }
