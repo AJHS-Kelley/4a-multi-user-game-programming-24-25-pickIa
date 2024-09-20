@@ -2,7 +2,6 @@ using System;
 class RockPaperScissors {
   static void Main() {
     int playerScore = 0;
-    int games = 0;
     int playerGuess;   
     int cpuScore = 0;  
     Console.WriteLine("Hello, enter your name here ");
@@ -82,7 +81,8 @@ class RockPaperScissors {
     {
       Console.WriteLine("You chose the same! Its a tie!");
     }
-    //ties
+    Console.WriteLine("Your score is: " + playerScore + ". The computers score is: " + cpuScore + "\n");
+  //ties
     }
     if (playerScore > cpuScore)
     {
