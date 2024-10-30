@@ -18,10 +18,13 @@ in c# a collection is known as an array
 */
 
 // declaring and defining an array
-
 string[] breakfastFoods = {"pancake", "bacon", "eggs", "grits", "cereal"};
 int[] testScores = {5, 1, 2, 9, 6}
 double[] gpa = {0.1, 0.99, 2.5, 3.55, 4.01}
 
+//print array contents -- all elements on single line
+Console.WriteLine("The elements of each array are:")
+Console.WriteLine("breakfastFoods:" + String.join(", ", breakfastFoods));
+Console.WriteLine();
   } //end
 }
