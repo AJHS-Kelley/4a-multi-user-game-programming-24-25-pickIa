@@ -20,13 +20,13 @@ in c# a collection is known as an array
 // declaring and defining an array
 string[] breakfastFoods = {"pancake", "bacon", "eggs", "grits", "cereal"};
 int[] testScores = {5, 1, 2, 9, 6};
-double[] gpa = {0.1, 0.99, 2.5, 3.55, 4.01};
+double[] gpa = {0.1D, 0.99D, 2.5D, 3.55D, 4.01D};
 
 //print array contents -- all elements on single line
 Console.WriteLine("The elements of string array are:");
 Console.WriteLine("breakfastFoods: " + String.Join(", ", breakfastFoods));
 Console.WriteLine();
-
+/*
 Console.WriteLine("The elements of int array are:");
 Console.WriteLine("testScores: " + String.Join(", ", testScores));
 Console.WriteLine();
@@ -52,5 +52,17 @@ Console.WriteLine("the second element in gpa is; " + gpa[1]);
 
 //print the 3rd element of the test scores array
 Console.WriteLine("the third element in testscores is; " + testScores[2]);
+
+// shortcut to access last item in an array
+Console.WriteLine("The last element of breakfastfoods is; " + breakfastFoods[breakfastFoods.Length - 1]);
+Console.WriteLine("the last element of gpa is; " + gpa[gpa.Length - 1]);
+*/
+//changing elements in the array
+breakfastFoods[2] = "green eggs and ham";
+gpa[3] = 2.3D;
+testScores[0] = 99;
+Console.WriteLine("The elements of string array are:");
+Console.WriteLine("breakfastFoods: " + String.Join(", ", breakfastFoods));
+Console.WriteLine();
   } //end
 }
