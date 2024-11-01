@@ -58,11 +58,36 @@ Console.WriteLine("The last element of breakfastfoods is; " + breakfastFoods[bre
 Console.WriteLine("the last element of gpa is; " + gpa[gpa.Length - 1]);
 */
 //changing elements in the array
-breakfastFoods[2] = "green eggs and ham";
-gpa[3] = 2.3D;
-testScores[0] = 99;
-Console.WriteLine("The elements of string array are:");
-Console.WriteLine("breakfastFoods: " + String.Join(", ", breakfastFoods));
-Console.WriteLine();
-  } //end
+// breakfastFoods[2] = "green eggs and ham";
+// gpa[3] = 2.3D;
+// testScores[0] = 99;
+// Console.WriteLine("The elements of string array are:");
+// Console.WriteLine("breakfastFoods: " + String.Join(", ", breakfastFoods));
+// Console.WriteLine();
+
+//common errors with arrays
+//Console.WriteLine(breakfastFoods[99]); //index out of bounds
+//testScores[0] "99"; error message "cannot implicitly conver dataType to datatype" = wrong data type inputted
+
+//common array methods
+// sorting an array
+int[] intArr = {-2, 3, 4, -5, 22, 19, 102, 99, -55, 1};
+string[] zooAnimals = {"horse", "dog", "cat", "shoe", "tortilla", "turducken", "fart", "thewholenumberof23", "acomma", "portapotty"};
+
+Array.Sort(intArr);
+Array.Sort(zooAnimals);
+//  Console.WriteLine("The elements of string array are:");
+//  Console.WriteLine("zooAnimals: " + String.Join(", ", zooAnimals));
+//  Console.WriteLine();
+//   Console.WriteLine("The elements of string array are:");
+//  Console.WriteLine("intArr: " + String.Join(", ", intArr));
+//  Console.WriteLine();
+
+//finding the min, max and sum for numerical arrays
+Console.WriteLine("the minimum value for intArr is; " + intArr.Min());
+Console.WriteLine("the maximum value for intArr is; " + intArr.Max());
+Console.WriteLine("the sumimum value for intArr is; " + intArr.Sum());
+
+
+   } //end
 }
