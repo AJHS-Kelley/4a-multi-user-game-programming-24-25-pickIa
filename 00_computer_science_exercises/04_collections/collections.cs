@@ -119,6 +119,33 @@ class Collections {
 // newlist.Remove(-10);
 // Console.WriteLine(newlist[0]);
 
+//deleting based on index number
+//.RemoveAt(value) deletes the item at specific index
+// newlist.RemoveAt(4);
+
+// //delete first item 
+// newlist.RemoveAt(0);
+
+// //delete last item;
+// newlist.RemoveAt(newlist.Length - 1);
+
+// //Remove an entire range of elements
+// //.RemoveRange(firstIndexToDelete, LastIndexToDelete)
+// newlist.RemoveRange(3,8)
+
+// //shortcut to delete from one item through end of list
+// newlist.RemoveRange(4, newlist.Length - 1);
+
+//does the arraylist contain a vertain value
+// .Contains(value) returns true if the list has that value, false otherwise
+new playerInventory = new ArrayList()
+  {
+   "sword", "shield", "bazooka", "1-up power up", "death notebook", "potato"
+  };
+
+Console.WriteLine(playerInventory.Contains("fishing pole"));
+Console.WriteLine(playerInventory.Contains("sword"));
+
 
    } //end
 }
